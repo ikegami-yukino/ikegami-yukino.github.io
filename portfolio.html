@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN">
+<html lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>池上 有希乃 プログラミング ポートフォリオ</title>
+</head>
+<body>
+<h1>池上 有希乃 プログラミング ポートフォリオ</h1>
+  <h2>主な研究</h2>
+    <h3>モードレス日本語入力, 2012年2月~2013年2月</h3>
+    <p><iframe src="https://www.slideshare.net/slideshow/embed_code/key/5eGYBc3hucfLk0" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukinoi/modeless-japanese-input-method" title="Modeless Japanese Input Method" target="_blank">Modeless Japanese Input Method</a> </strong> from <strong><a href="//www.slideshare.net/yukinoi" target="_blank">Yukino Ikegami</a></strong> </div></p>
+    <p>英数字/日本語モード切替を自動で行うモードレス入力の研究. キーボードから入力されたローマ字列から n-gram ベースの識別モデルを用いて日本語らしい部分のみ仮名変換を行い, それ以外はローマ字のままにします. これによって英数モードとかなモードの入力モードを切り替える手間がなくなります. 先行研究では識別に文字表記 n-gram のみを用いていたのに対して, 本研究では文字種(大文字/小文字/数字/記号) n-gram や曖昧性のない英語辞書を用いることで 99.71% の精度のモードレス入力が可能となりました.</p>
+    <ul>
+        <li>論文:
+          <ul>
+            <li><strong>Yukino Ikegami</strong>, Setsuo Tsuruta.<br>
+            <em><a href="http://link.springer.com/article/10.1007/s11042-013-1805-1">Hybrid method for modeless Japanese input using N-gram based binary classification and dictionary</a></em>.<br>
+            Multimedia Tools and Applications, Volume 74, Issue 11, pp. 3933–3946 , 2015.</li>
+            <li><strong>Yukino Ikegami</strong>, Yoshitaka Sakurai, Setsuo Tsuruta.<br>
+          <em><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6395150">Modeless Japanese Input Method Using Multiple Character Sequence Features</a></em>.<br>
+          SITIS 2012, pp. 613–618, 2012.</li>
+          </ul>
+        </li>
+      <li>Programming language: Python, C++</li>
+      <li>Middleware/Library: MeCab, LIBLINEAR, marisa-trie</li>
+      <li>OS: Mac OSX</li>
+    </ul>
+
+    <h3>情報信憑性判定システム, 2011年4月~8月</h3>
+
+    <p><img src="img/smc2013_twitter.jpg" height="290">
+    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/6fADDt4lKkFsTZ" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yukinoi/ikegami-twitter-smclatest" title="Topic and Opinion Classification based Information Credibility Analysis on Twitter" target="_blank">Topic and Opinion Classification based Information Credibility Analysis on Twitter</a> </strong> from <strong><a href="https://www.slideshare.net/yukinoi" target="_blank">Yukino Ikegami</a></strong> </div></p>
+    <p>Twitter の投稿の情報信憑性を数値化して出力するシステム. Latent Dirichlet Allocation (LDA) によって投稿を話題ごとにクラスタリングし, それぞれの投稿の意見の極性 (肯定/否定) を推定し, 肯定/否定の割合によって情報信憑性を数値化します.</p>
+
+    <ul>
+      <li>論文:
+          <ul>
+            <li><strong>Yukino Ikegami</strong>, Kenta Kawai, Yoshimi Namihira, Setsuo Tsuruta.<br>
+            <em><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6722551">Topic and Opinion Classification Based Information Credibility Analysis on Twitter</a></em>.<br>
+            SMC 2013, pp. 4676–4681, 2013.</li>
+            <li>Yoshimi Namihira, Naomichi Segawa, <strong>Yukino Ikegami</strong>, Kenta Kawai, Takashi Kawabe, Setsuo Tsuruta.<br>
+          <em><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6727298">High Precision Credibility Analysis of Information on Twitter</a></em>.<br>
+          SITIS 2013, pp. 909–915, 2013.</li>
+          </ul>
+      </li>
+      <li>特許: <a href="http://astamuse.com/ja/published/JP/No/2014134944">特願2013-002269 情報判定装置、情報判定方法、およびプログラム</a></li>
+      <li>Programming language: Python, PHP, R</li>
+      <li>Middleware/Library: MeCab, MySQL, GibbsLDA++, Classias, EasyBotter</li>
+      <li>OS: Linux (Ubuntu)</li>
+    </ul>
+
+    <h3>句単位照応解析, 2012年8月</h3>
+    <p><iframe src="https://www.slideshare.net/slideshow/embed_code/key/AVDum1mdCIhe7" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukinoi/anaphora-smc-latest" title="Clause Anaphora Resolution for Japanese Demonstrative Determiner based on Semantic Similarity between Different Parts-of-Speech" target="_blank">Clause Anaphora Resolution for Japanese Demonstrative Determiner based on Semantic Similarity between Different Parts-of-Speech</a> </strong> from <strong><a href="//www.slideshare.net/yukinoi" target="_blank">Yukino Ikegami</a></strong> </div></p>
+    <p>句単位での照応関係を同定する研究. 例えば,</p>
+    <pre>「君もそろそろ部長だね」と常務から言われました。<br><strong>あの話</strong>は一体なんだったんでしょう</pre>
+    <p>という文章の<strong>あの話</strong>が何を指しているかを当てる手法の研究です. こうした照応関係は対話にて発生することがありますが, これまでの照応解析はあくまでも単語単位での照応関係を扱うもので, 句単位での照応関係が行わなれていなかったので, 日立製作所横浜研究所インターンにて取り組みました.</p>
+    <ul>
+      <li>論文:
+          <ul>
+            <li><strong>Yukino Ikegami</strong>, Ernesto Damiani, Akihiro Urano, Setsuo Tsuruta.<br>
+            <em><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6722276">Clause Anaphora Resolution for Japanese Demonstrative Determiner Based on Semantic Similarity between Different Part-of-Speech</a></em>.<br>
+            SMC 2013, pp. 3067–3072, 2013.</li>
+          </ul>
+      </li>
+      <li>Programming language: Python</li>
+      <li>OS: Linux (CentOS)</li>
+    </ul>
+
+    <h3>悩み相談用対話エージェントシステム, 2012年3月~2014年2月</h3>
+    <p><img src="img/c_a3.png"></p>
+    <p>対話を通して相談者自身が問題解決の気づきを得られるように支援するエキスパートシステム. 心理学分野の知見やテクニックをコンピュータで実現することを目標としています. 自然言語処理では照応解析や感情推定, 談話要約の技術が使われています.</p>
+    <ul>
+      <li>論文:
+          <ul>
+            <li>Yukiko Yamamoto, Tetsuo Shinozaki, <strong>Yukino Ikegami</strong>, Setsuo Tsuruta.<br>
+            <em><a href="http://link.springer.com/article/10.1007/s11280-015-0326-4">Context respectful counseling agent virtualized on the web</a></em>.<br>
+            World Wide Web, pp. 1–24, 2015.</li>
+            <li>Testuo Shinozaki, <strong>Yukino Ikegami</strong>, Estele Bissay, Setsuo Tsuruta.<br>
+            <em><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6727299">Applying Context Respectful Summarization to Counseling Agent for the Japanese</a></em>.<br>
+            SITIS 2013, pp. 916–923, 2013.</li>
+          </ul>
+      </li>
+      <li>特許: <a href="http://astamuse.com/ja/published/JP/No/2014229180">特願2013-109854 内省支援装置、内省支援方法、内省支援プログラム、対話装置、対話方法および対話プログラム</a></li>
+      <li>Programming language: Python, C++</li>
+      <li>Middleware/Library: MeCab, CaboCha, ASA, ML-ASK</li>
+      <li>OS: Windows, Mac OSX, Linux (Vine Linux)</li>
+    </ul>
+
+  <h2>Open Source Software</h2>
+      <h3><a href="https://pypi.python.org/pypi/neologdn/">neologdn</a></h3>
+        <p>形態素解析器MeCab用辞書mecab-ipadic-neologd向けの前処理ツール.</p>
+        <p>紹介記事1: <a href="http://yukinoi.hatenablog.com/entry/2015/10/11/205006">mecab-neologd 前処理用 Python モジュール neologdn 公開しました - debug me</a></p>
+        <p>紹介記事2: <a href="http://www.slideshare.net/yukinoi/pythonneologdn">テキスト前処理用Pythonモジュールneologdnの紹介</a></p>
+      <h3><a href="http://pypi.python.org/pypi/rakutenma">rakutenma-python</a></h3>
+        <p>オンライン機械学習による解析モデルのアップデートが可能な形態素解析ツール Rakuten MA の Python ポートライブラリ.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/925bc238185aa2fad8a7">Pure Python なオンライン形態素解析ツール Rakuten MA - Qiita</a></p>
+      <h3><a href="http://pypi.python.org/pypi/jaconv">jaconv</a></h3>
+        <p>ひらがな・カタカナ・半角カナ・全角カナの文字種変換をほどほどに高速に行える Pure-Python ライブラリ. 自然言語処理の前処理用のツールとして開発しました.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/42f8b5461dc1b62db7f9">Python3での日本語変換モジュールの比較 - Qiita</a></p>
+      <h3><a href="http://pypi.python.org/pypi/pytypo">pytypo</a></h3>
+        <p>英語テキストの前処理モジュール. typoを修正したり, 文字の連続表現を正規化します. 例えば, Cooooool を cool に, thanxxx を thanx に変換します.</p>
+      <h3><a href="http://pypi.python.org/pypi/oll">oll-python</a></h3>
+        <p>オンライン機械学習ライブラリ OLL の Python ラッパー. 手軽に Python でオンライン学習を行えるのが特長です.</p>
+      <h3><a href="http://pypi.python.org/pypi/madoka">madoka-python</a></h3>
+        <p>Count-Min Sketchライブラリ madoka の Python ラッパー. Python 標準の dict 型や Counter 型よりも省メモリで Key-Value データ型を扱えます.</p>
+      <h3><a href="http://pypi.python.org/pypi/shellinford">shellinford-python</a></h3>
+        <p>ウェーブレット行列/木での FM-index ライブラリ shellinford の Python ラッパー. Python で手軽に全文検索を実現できることや, 検索の速さとインデックスのサイズが小さい(省メモリ・ディスク)ことが特長です.</p>
+      <h3><a href="https://pypi.python.org/pypi/python-tr">python-tr</a></h3>
+        <p>tr コマンドのアルゴリズムを Python で利用するためのライブラリ.</p>
+      <h3><a href="https://pypi.python.org/pypi/kpy">kpy</a></h3>
+        <p>UserAgent から携帯電話のモデル名を抽出するライブラリ.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/cea423bc1a4c73268439">Python - UserAgentから携帯電話の機種名を抽出 - Qiita</a></p>
+
+  <h2>その他制作物</h2>
+    <h3>学園祭案内用質問応答システム, 2010年9月</h3>
+    <p><img src="img/syuyou2010_1.png" width="280"> → <img src="img/syuyou2010_2.png" width="280"> → <img src="img/syuyou2010_3.png" width="280"></p>
+    <p>初期画面 → 処理中 → 結果出力</p>
+    <p>ゲーム用コントローラのボタンを押すと音声とテキストによって大学および学園祭の情報を案内するシステム. 学園祭では親子連れで来る方が多いため, 子供にも楽しめるように入出力インターフェースに視覚 (GUI), 聴覚 (音声合成), 触覚 (ゲーム pop'n music 用コントローラ) を使うものを選びました. システムの処理系の他に画面インターフェースの設計・開発も行いました.</p>
+    <ul>
+      <li>Programming language: PHP, JavaScript, C#</li>
+      <li>Middleware/Library: Apache, Ajax, MeCab, MySQL, AquesTalk2</li>
+      <li>OS: Windows</li>
+    </ul>
+
+    <h3>マルチモーダル質問応答システム, 2011年9月</h3>
+    <p><img src="img/c_a2.jpg"></p>
+    <p>音声対話による質問応答システム. 返答時に 3D アバターが返答の内容に沿った感情表現を行います. 例えば, 質問の答えが残念なものは暗い喋り方でユーザに答えます. 音声対話ツールキット MMDAgent をベースに, 音声認識用辞書の語彙拡張, 質問検索, 感情分類処理を追加しました. 質問検索には Yahoo!知恵袋のデータを用いました. 音声認識用の辞書にも Yahoo!知恵袋の質問文 (約50MB) から句単位(フレーズベース)によって構築しました.</p>
+    <ul>
+      <li>Programming language: Python, PHP, C++</li>
+      <li>Middleware/Library: MMDAgent, The SRI Language Modeling Toolkit (SRILM), MeCab</li>
+      <li>OS: Windows</li>
+    </ul>
+
+    <h3>現代/歴史的仮名遣における平仮名表記の曖昧性評価, 2011年10月~2012年1月</h3>
+    <p>かな漢字変換における同音異義語による誤変換の解消手段として歴史的仮名遣表記に着目しました. そこで歴史的仮名遣表記のかな漢字変換における有用性を評価するため, 日本語辞書 NAIST-Japanese Dictionary の読みを歴史的仮名遣化し, 平仮名表記の曖昧性を情報エントロピーなどの尺度で現代仮名遣表記と評価するプログラムを作成しました. そして評価の結果, 歴史的仮名遣表記の方が有意に曖昧性が低いことがわかりました.</p>
+    <ul>
+      <li>Programming language: Python, R</li>
+      <li>OS: Mac OSX</li>
+    </ul>
+
+    <h3>Twitter アカウント推薦システム, 2010年10月~2011年1月</h3>
+    <p>Twitter のログを解析して利用者が興味を持ちそうな Twitter アカウントを推薦するシステム. 共通の知人がいたり共通の話題が多い人に興味を持つだろうという仮定をもとに, 推薦基準として Latent Dirichlet Allocation (LDA) によるトピックの類似度や利用者のリプライ頻度による重み付けをした共通フォロワー数などを用いました.</p>
+    <ul>
+      <li>Programming language: Python, PHP</li>
+      <li>Middleware/Library: Apache, MeCab, MySQL, GibbsLDA++, EasyBotter, Maxent</li>
+      <li>OS: Windows</li>
+    </ul>
+
+    <h3>Wordpress 用 Twitter 連携モジュール, 2012年2月</h3>
+    <p>ブログシステム Wordpress の記事投稿/更新を Twitter から行うことを可能にするモジュール. 御茶ノ水美術専門学校の特設サイト OCHAPEDIA (現在は公開終了) の更新用に作りました. 要望により Python 標準ライブラリのみを用いて実装しました.</p>
+    <ul>
+      <li>Programming language: Python</li>
+      <li>OS: Linux (CentOS)</li>
+    </ul>
