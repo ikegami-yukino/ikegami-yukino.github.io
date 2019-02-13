@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN">
+<html lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>池上 有希乃 オープンソースソフトウェア</title>
+</head>
+<body>
+<h1>池上 有希乃 オープンソースソフトウェア</h1>
+  <h2>テキスト前処理</h2>
+      <h3><a href="https://pypi.python.org/pypi/neologdn/">neologdn</a></h3>
+        <p>形態素解析器MeCab用辞書mecab-ipadic-neologd向けの前処理ツール.</p>
+        <p>紹介記事1: <a href="http://yukinoi.hatenablog.com/entry/2015/10/11/205006">mecab-neologd 前処理用 Python モジュール neologdn 公開しました - debug me</a></p>
+        <p>紹介記事2: <a href="http://www.slideshare.net/yukinoi/pythonneologdn">テキスト前処理用Pythonモジュールneologdnの紹介</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/neologdn">neologdn</a></p>
+      <h3><a href="https://mvnrepository.com/artifact/io.github.ikegami-yukino/neologdn">neologdn-java</a></h3>
+        <p>上記 neologdn の Java バージョン</p>
+        <p>紹介記事: <a href="https://qiita.com/yukinoi/items/6883528b3ac1fa019138">Java で NEologd の前処理 neologdn-java - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/neologdn-java">neologdn-java</a></p>
+      <h3><a href="http://pypi.python.org/pypi/jaconv">jaconv</a></h3>
+        <p>ひらがな・カタカナ・半角カナ・全角カナの文字種変換をほどほどに高速に行える Pure-Python ライブラリ. 自然言語処理の前処理用のツールとして開発しました.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/42f8b5461dc1b62db7f9">Python3での日本語変換モジュールの比較 - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/jaconv">jaconv</a></p>
+      <h3><a href="http://pypi.python.org/pypi/pytypo">pytypo</a></h3>
+        <p>英語テキストの前処理モジュール. typoを修正したり, 文字の連続表現を正規化します. 例えば, Cooooool を cool に, thanxxx を thanx に変換します.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/pytypo">pytypo</a></p>
+
+  <h2>テキスト分析</h2>
+      <h3><a href="http://pypi.python.org/pypi/mecab-python-windows">mecab-python-windows</a></h3>
+        <p>Microsoft Visual C++ Compiler で mecab-python をビルドしたものをwheel形式で配布しているもの. これにより VC++ コンパイラーがない環境でも Python で形態素解析器 MeCab が使えます.</p>
+        <p>紹介記事: <a href="https://qiita.com/yukinoi/items/990b6933d9f21ba0fb43">Windows で pip で mecab-python をいれる - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/mecab/tree/master/mecab/python_windows">MeCab</a></p>
+      <h3><a href="http://pypi.python.org/pypi/rakutenma">rakutenma-python</a></h3>
+        <p>オンライン機械学習による解析モデルのアップデートが可能な形態素解析ツール Rakuten MA の Python ポートライブラリ.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/925bc238185aa2fad8a7">Pure Python なオンライン形態素解析ツール Rakuten MA - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/rakutenma-python">rakutenma-python</a></p>
+      <h3><a href="http://pypi.python.org/pypi/pymlask">pymlask</a></h3>
+        <p>感情分析器 ML-Ask の Python ポートライブラリ. テキストから感情や評価極性など様々な特徴を推定します.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/ef6fb48b5e3694e9659c">ML-Askでテキストの感情分析 - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/pymlask">pymlask</a></p>
+      <h3><a href="http://pypi.python.org/pypi/oseti">oseti</a></h3>
+        <p>東北大学の乾・鈴木研究室のページで公開されている日本語評価極性辞書を使った Sentiment Analysis (いわゆるネガポジ判定) ライブラリ. 日本語評価極性辞書を用いて文の評価極性 (ポジティブ/ネガティブ) のスコアを計算します.</p>
+        <p>紹介記事: <a href="https://qiita.com/yukinoi/items/46aa016d83bb0e64f598">日本語評価極性辞書を利用したPython用Sentiment Analysisライブラリ oseti を公開しました - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/oseti">oseti</a></p>
+      <h3><a href="http://pypi.python.org/pypi/asa">asa-python</a></h3>
+        <p>意味役割付与システム ASA のPythonクライアントライブラリ. 入力文に対して述語項構造解析を行い，その後，述語の語義を同定して，係り関係にある項の意味役割を付与します.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/asa-python">asa-python</a></p>
+
+  <h2>テキスト検索</h2>
+      <h3><a href="http://pypi.python.org/pypi/shellinford">shellinford-python</a></h3>
+        <p>ウェーブレット行列/木での FM-index ライブラリ shellinford の Python ラッパー. Python で手軽に全文検索を実現できることや, 検索の速さとインデックスのサイズが小さい(省メモリ・ディスク)ことが特長です.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/shellinford-python">shellinford-python</a></p>
+
+  <h2>機械学習</h2>
+      <h3><a href="http://pypi.python.org/pypi/oll">oll-python</a></h3>
+        <p>オンライン機械学習ライブラリ OLL の Python ラッパー. 手軽に Python でオンライン学習を行えるのが特長です.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/oll-python">oll-python</a></p>
+
+  <h2>その他</h2>
+      <h3><a href="http://pypi.python.org/pypi/madoka">madoka-python</a></h3>
+        <p>Count-Min Sketchライブラリ madoka の Python ラッパー. Python 標準の dict 型や Counter 型およびRedisよりも省メモリで Key-Value データを扱えます.</p>
+        <p><a href="https://github.com/ikegami-yukino/madoka-python/blob/master/Benchmark.ipynb">ベンチマーク</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/madoka-python">madoka-python</a></p>
+      <h3><a href="https://pypi.python.org/pypi/python-tr">python-tr</a></h3>
+        <p>tr コマンドのアルゴリズムを Python で利用するためのライブラリ.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/python-tr">python-tr</a></p>
+      <h3><a href="https://pypi.python.org/pypi/flati">flati</a></h3>
+        <p>ネストされた iterable なオブジェクトを flatten するためのライブラリ. たとえば、[(1, 2, 3), (4, (5, 6))]というリストを[1, 2, 3, 4, 5, 6]という風に変換します.</p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/flati">flati</a></p>
+      <h3><a href="https://pypi.python.org/pypi/kpy">kpy</a></h3>
+        <p>UserAgent から携帯電話のモデル名を抽出するライブラリ.</p>
+        <p>紹介記事: <a href="http://qiita.com/yukinoi/items/cea423bc1a4c73268439">Python - UserAgentから携帯電話の機種名を抽出 - Qiita</a></p>
+        <p>GitHub: <a href="https://github.com/ikegami-yukino/kpy">kpy</a></p>
+  <hr>
+  <p><a href="index.html">&lt;&lt; 戻る</a></p>
